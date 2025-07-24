@@ -3,9 +3,9 @@ package org.example.kisok;
 //햄버거 메뉴 관리
 public class MenuItem {
     //속성(필드)
-    String name;
-    double price;
-    String details;
+    private String name;
+    private double price;
+    private String details;
 
 
     //생성자 (조립설명서)
@@ -24,5 +24,15 @@ public class MenuItem {
     public String getDetails() {
         return details;
     }
+
     //기능
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setPrice(double price) {
+        this.price = price;
+    }
+    public void setDetails(String details) {
+        this.details = details;
+    }
 }
